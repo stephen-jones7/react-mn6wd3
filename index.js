@@ -1,26 +1,18 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
-import Hello from './Hello';
-import './style.css';
+//var React = require("react");
+// import is the newest way to get a module in your program.
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      name: 'React'
-    };
-  }
+import React from "react";
 
-  render() {
-    return (
-      <div>
-        <Hello name={this.state.name} />
-        <p>
-          Start editing to see some magic happen :)
-        </p>
-      </div>
-    );
-  }
-}
+//var ReactDOM = require("react-dom");
+import ReactDOM from "react-dom";
 
-render(<App />, document.getElementById('root'));
+//ReactDOM.render(what to ShadowRoot, where to show it);
+// div is needed if you need to show more than one Element
+// at a timed
+ReactDOM.render(
+  <div>
+    <h1>Hello world.</h1>
+    <p>This is a new paragraph.!</p>
+  </div>,
+  document.getElementById("root")
+);
