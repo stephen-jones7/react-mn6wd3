@@ -6,7 +6,7 @@ import React from "react";
 //var ReactDOM = require("react-dom");
 import ReactDOM from "react-dom";
 import './style.css';
-import App from "./App.jsx"
+import App from "./components/App.jsx"
 
 
 ReactDOM.render(
